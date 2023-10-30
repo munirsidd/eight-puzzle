@@ -26,7 +26,7 @@ The project implements the following state-space search algorithms:
    - An informed search that uses heuristic functions to prioritize states based on estimated cost.
    - Utilizes heuristic functions (h0, h1, and h2) for estimation.
 
-5. **A* Search (Algorithm: 'A*')**:
+5. **A\* Search (Algorithm: 'A\*')**:
    - An informed search that combines the cost to reach a state and an estimated cost to the goal.
    - Utilizes heuristic functions (h0, h1, and h2) for estimation.
 
@@ -59,19 +59,17 @@ To use the Eight Puzzle Solver, run the `eight_puzzle.py` script and follow thes
    eight_puzzle(board_config, algorithm, param)
    ```
    
-   - Replace board_config with an initial board configuration, e.g. '312065748'.
-   - Replace algorithm with one the supported algorithms: 'random', 'BFS', 'DFS', 'Greedy', or 'A*'.
-   - For the 'random', 'BFS' and 'DFS' algorithms, replace param with a depth limit (-1 if you don't want one). 
-   - For the 'Greedy' and 'A*' algorithms, replace param with one of the heuristic functions: h0, h1, or h2.
-
-3. Alternatively, create a text file containing multiple board configurations, or use one of the files provided in the `sample_puzzles` directory, and run:
+   Alternatively, create a text file containing multiple board configurations, or use one of the files provided in the `sample_puzzles` directory, and run:
 
    ```python
    process_file(filename, algorithm, param)
    ```  
 
+   - Replace board_config with an initial board configuration, e.g. '312065748'.
+   - Replace algorithm with one the supported algorithms: 'random', 'BFS', 'DFS', 'Greedy', or 'A*'.
+   - For the 'random', 'BFS' and 'DFS' algorithms, replace param with a depth limit (-1 if you don't want one). 
+   - For the 'Greedy' and 'A*' algorithms, replace param with one of the heuristic functions: h0, h1, or h2.
+
 4. Observe the solver in action!
 
 ## Enjoy Solving Eight Puzzles!
-
-The Eight Puzzle Solver offers a variety of state-space search algorithms and heuristic functions to tackle Eight Puzzles efficiently. Experiment with different algorithms and heuristics to find the optimal strategy for solving these classic puzzles. Enjoy the challenge of Eight Puzzles and hone your problem-solving skills!
